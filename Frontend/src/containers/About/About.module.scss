@@ -1,0 +1,61 @@
+.profileCard {
+    width: 90%;
+    border: black solid 1px;
+    border-radius: 25px;
+
+    padding: 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .greeting {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 5rem;
+        margin-left: 150px;
+
+        .buttonsSec {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .profileImg {
+            width: 100px;
+            height: 200px;
+            border-radius: 30px;
+            margin-left: 50px;
+        }
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        background: #333;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover {
+            background: #555;
+        }
+    }
+}
