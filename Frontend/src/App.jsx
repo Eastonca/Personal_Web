@@ -1,4 +1,3 @@
-import styles from './App.module.scss'
 import Header from "./containers/Header/Header";
 import Body from "./containers/Body/Body"
 import '@fortawesome/fontawesome-free/css/all.min.css';
