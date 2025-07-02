@@ -1,0 +1,40 @@
+.container {
+    width: 90%;
+    border: black solid 1px;
+    border-radius: 25px;
+
+    padding: 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .schoolLogo {
+            width: 50px;
+            margin-bottom: 0.5rem;
+        }
+
+        .schoolName {
+            font-size: 1.1rem;
+        }
+
+        .schoolName,
+        .major {
+            font-weight: 600;
+        }
+
+        .time {
+            margin-left: 1rem;
+        }
+    }
+}
