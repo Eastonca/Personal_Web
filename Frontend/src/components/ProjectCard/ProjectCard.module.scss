@@ -6,31 +6,36 @@
     padding: 1rem 1rem 1.5rem 1.5rem;
     gap: 1rem;
     border-radius: 5px;
-}
 
-.name {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
+    .name {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
 
-.imageSec {
-    position: relative;
-}
+    .imageSec {
+        position: relative;
 
-.visual {
-    height: 300px;
-    width: 200px;
-}
+        .visual {
+            min-height: 400px;
+            width: 300px;
+        }
+        .enlargeIcon {
+            position: absolute;
+            width: 30px; // icon size
+            bottom: 50%; // distance from bottom
+            left: 101%;
+            height: 30px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+    }
 
-.enlargeIcon {
-    position: absolute;
-    width: 30px; // icon size
-    bottom: 50%; // distance from bottom
-    left: 101%;
-    height: 30px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
 
 .previewOverlay {
     position: fixed;
@@ -46,10 +51,4 @@
     max-width: 90vw;
     border: 2px solid #333;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
 }

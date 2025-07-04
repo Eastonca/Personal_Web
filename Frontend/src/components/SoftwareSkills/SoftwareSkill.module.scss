@@ -1,12 +1,14 @@
 @use "../../_global" as *;
 
 .devIcons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 1rem;
-  text-align: center;
+    display: grid;  
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 100%;
 }
 
 .softwareSkillInline {

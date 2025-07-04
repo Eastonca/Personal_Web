@@ -6,7 +6,7 @@ import { projects } from "../../portfolio";
 function ProjectSec() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Technical Projects</h1>
+      <h1 className={styles.title}>Projects Showcase</h1>
       <div className={styles.cardContainer}>
         {projects.map(
           (project, i) =>

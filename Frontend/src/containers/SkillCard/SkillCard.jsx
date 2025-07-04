@@ -11,7 +11,7 @@ function About() {
       <SoftwareSkill></SoftwareSkill>
       <div>
         {skillsSection.skills.map((skills, i) => {
-          return <p key={i}>{skills}</p>;
+          return <p key={i} className={styles.skillDesc}>{skills}</p>;
         })}
       </div>
     </div>
