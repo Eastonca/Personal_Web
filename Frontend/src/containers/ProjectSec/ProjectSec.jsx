@@ -1,10 +1,20 @@
-import React from 'react'
-import styles from './ProjectSec.module.scss'
+import React from "react";
+import styles from "./ProjectSec.module.scss";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { projects } from "../../portfolio";
 
 function ProjectSec() {
   return (
-    <div>ProjectSec</div>
-  )
+    <div className={styles.container}>
+      <h1 className={styles.title}>Technical Projects</h1>
+      <div className={styles.cardContainer}>
+        {projects.map(
+          (project, i) =>
+            project.enabled && <ProjectCard key={i} project={project}></ProjectCard>
+        )}
+      </div>
+    </div>
+  );
 }
 
-export default ProjectSec
+export default ProjectSec;

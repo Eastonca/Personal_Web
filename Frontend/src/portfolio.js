@@ -4,6 +4,7 @@ import socketIcon from './assets/skillsIcons/Socket-io.svg'
 import unityicon from './assets/skillsIcons/unity.png'
 import mongoIcon from './assets/skillsIcons/mongo.svg'
 import ubcIcon from './assets/ubcLogo.png'
+import chatRoom from './assets/projectIcons/realtimeChatroom.png'
 
 const skillsSection = {
   title: 'What I Do',
@@ -64,7 +65,7 @@ const skillsSection = {
       fontAwesomeClassname: 'fab fa-node'
     },
     {
-      skillName: 'Socket',
+      skillName: 'Socket.io',
       fontAwesomeClassname: '',
       src: socketIcon
     },
@@ -74,7 +75,7 @@ const skillsSection = {
       src: unityicon
     },
     {
-      skillName: 'Mongo',
+      skillName: 'MongoDB',
       fontAwesomeClassname: '',
       src: mongoIcon
     }
@@ -85,6 +86,7 @@ const skillsSection = {
 const education = {
   schools: [
     {
+      enabled: true,
       logo: ubcIcon,
       schoolName: 'University Of British Columbia',
       major: 'Bachelor of Science in Computer Science',
@@ -97,8 +99,70 @@ const education = {
         'CPSC 213 - Introduction to Computer Systems',
         'CPSC 221 - Basic Algorithms and Data Structures'
       ]
+    }, 
+    {
+      enabled: false,
+      logo: '',
+      schoolName: '',
+      major: '',
+      time: '',
+      description: '',
     }
   ]
 }
 
-export { skillsSection, education }
+const projects = [
+    {
+        enabled: true,
+        name: "Realtime Chat Room",
+        visuals: [chatRoom],
+        link: "https://realtime-chat-web-5v7w.onrender.com",
+        github: "https://github.com/Eastonca/Realtime_Chat_Web",
+        toolsUsed: "Socket.io, NodeJS, ExpressJS, React, JS, CSS, HTML",
+        description: [
+            "Utilized Socket.IO for realtime, bi-directional communication",
+            "Built with NodeJS and ExpressJS",
+            "Styled with plain CSS and HTML",
+            "Deployed on Render"
+        ]
+    },
+    {
+        enabled: true,
+        name: "User Auth Backend System with MongoDB",
+        visuals: "",
+        link: "",
+        github: "",
+        toolsUsed: "NodeJS, ExpressJS, Mongoose, MongoDB",
+        description: "", 
+    },
+    {
+        enabled: true,
+        name: "Movie Cards Search",
+        visuals: "",
+        link: "",
+        github: "",
+        toolsUsed: "React, TMDB API, JS, CSS, HTML",
+        description: "", 
+    },
+    {
+        enabled: true,
+        name: "Weather Search",
+        visuals: "",
+        link: "",
+        github: "",
+        toolsUsed: "Javascript, WeatherApi, CSS, HTML",
+        description: "", 
+    },
+    {
+        enabled: true,
+        name: "Blackjack Game",
+        visuals: "",
+        link: "",
+        github: "",
+        toolsUsed: "Javascript, CSS, HTML",
+        description: "", 
+    },
+]
+
+
+export { skillsSection, education, projects }

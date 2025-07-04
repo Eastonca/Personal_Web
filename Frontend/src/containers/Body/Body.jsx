@@ -2,6 +2,7 @@ import Style from "./Body.module.scss";
 import About from "../About/About";
 import SkillCard from "../SkillCard/SkillCard"
 import Education from "../Education/Education"
+import ProjectSec from "../ProjectSec/ProjectSec";
 
 function Body() {
   return (
@@ -9,6 +10,7 @@ function Body() {
       <About></About>
       <SkillCard></SkillCard>
       <Education></Education>
+      <ProjectSec></ProjectSec>
     </div>
   );
 }

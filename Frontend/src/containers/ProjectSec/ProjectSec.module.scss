@@ -1,0 +1,21 @@
+.container {
+    width: 95%;
+    border: black solid 1px;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.title {
+    margin-right: 2rem;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); /* fixed height example */
+    gap: 1rem;              /* space between cards */
+}
+
+
